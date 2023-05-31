@@ -1,15 +1,20 @@
 ### Added run script:
+
 To run type this script in teminal:
-``` 
+
+```
 npm run build
 ```
 
 ### 1. Install Tailwind CSS
+
 ```
 npm install -D tailwindcss
 npx tailwindcss init
 ```
+
 ### 2. Configure your template paths
+
 ```
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -20,7 +25,9 @@ module.exports = {
   plugins: [],
 }
 ```
+
 ### 3. Add the Tailwind directives to your CSS
+
 ```
 @tailwind base;
 @tailwind components;
@@ -28,9 +35,11 @@ module.exports = {
 ```
 
 ### 4. Start the Tailwind CLI build process
+
 ```
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ```
+
 ### 5. Start using Tailwind in your HTML
 
 ```sh
@@ -42,9 +51,11 @@ npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
   <link href="/dist/output.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+      <h1 
+      class="font-bold text-center text-red-500 text-9xl">
+      Hello World!
+      </h1>
+
 </body>
 </html>
 ```
