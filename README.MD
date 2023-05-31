@@ -1,3 +1,9 @@
+### Added run script:
+To run type this script in teminal:
+``` 
+npm run build
+```
+
 ### 1. Install Tailwind CSS
 ```
 npm install -D tailwindcss
